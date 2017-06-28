@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+ main {
+    flex: 1 0 auto;
+}
+
+p, h2, h4{ 
+  text-align: center;
+}
+
+.carousel .carousel-item{
+    width: 300px;
+
+}

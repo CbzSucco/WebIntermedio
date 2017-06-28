@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    <main>
+      <!--.............................. Dropdown Structure........................... -->
+    <div class="navbar-fixed"> <!--para que el navbar me siga cuando haga scrolls-->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li class="divider"></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+
+        <!--.............................. Dropdown Structure........................... -->
+       
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li class="divider"></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+
+
+        <nav class="#2196f3 blue">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">&nbsp;Super Mercado</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index2.html">Productos</a></li>
+              <!-- Dropdown Trigger, eventos que esperan para que ocurra otra cosa -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Redes Sociales<i class="material-icons down">arrow_drop_down</i></a></li>
+            </ul>
+            
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Redes Sociales<i class="material-icons down">arrow_drop_down</i></a></li>
+          </ul>
+
+          </div>
+        </nav>
+    </div>
+
+     
+ 
+<!--.............................. Comienza Contenido........................... -->
+<div class="Container"> 
+   <div class="parallax-container">
+      <div class="parallax"><img src="img/mixverdura.jpg"></div>
+    </div>
+<!--.......................................-->
+    
+      <div calss="section-white">
+        <div class="row container">
+          <div class="col m12 s12">
+          <h3 class="align">¿Quienes somos?</h3>
+          <p class="align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatum dolor consequatur recusandae. Explicabo unde officia magnam autem quos animi sequi odit cum expedita excepturi at doloribus eaque, dignissimos sit.</p>
+          </div>
+
+          <div class="col m6 s6">
+           <h3 class="align">Misión</h3>
+          <p class="align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatum dolor consequatur recusandae. Explicabo unde officia magnam autem quos animi sequi odit cum expedita excepturi at doloribus eaque, dignissimos sit.</p>   
+          </div>
+
+          <div class="col m6 s6">
+           <h3 class="align">Visión</h3>
+          <p class="align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptatum dolor consequatur recusandae. Explicabo unde officia magnam autem quos animi sequi odit cum expedita excepturi at doloribus eaque, dignissimos sit.</p>
+            
+          </div>
+           
+             
+        </div>
+     
+
+      <div class="parallax-container">
+      <div class="parallax"><img src="img/proteinas.jpg"></div>
+      </div>
+</div>  
+
+
+
+    
+        
+
+
+
+  </main>
+ <!--.............................. Comienza Footer........................... -->
+    
+       <footer class="page-footer #2962ff blue accent-4">
+          <div class="container">
+            <div class="row">
+              <div class="col m6 ">
+                <h5 class="white-text">Baja nuestra app!</h5>
+                <p class="white-text">Logos de las tiendas de aplicaciones más famosas</p>
+              </div>
+              <div class="col m6 center">
+                <h5 class="white-text">Contactp</h5>
+                <span class="white-text"></span>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">succo.21@gmail.com</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container center">
+            © 2014 Copyright Text
+           
+            </div>
+          </div>
+        </footer>
+      
+
+    
+    </body>
+    
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script>
+        $( document ).ready(function(){
+          $(".dropdown-button").dropdown();
+          $('.button-collapse').sideNav();
+           $('.parallax').parallax();
+           $('.carousel').carousel();
+        });
+      </script>
+
+   
+  </html>

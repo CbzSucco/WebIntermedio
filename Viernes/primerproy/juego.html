@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra, papael o tijera</title>
+</head>
+<body>
+	<script>
+		document.write("<h1>Hola mundo</h1>");
+		var usuarioElige = prompt("¿Piedra, papael o tijera?");
+		var computadoraElige = Math.random();//random regresa numeros aleatorios del 0 al 1
+			if (computadoraElige<=0.33)
+				computadoraElige="piedra";
+			else if(computadoraElige>=0.67)
+				computadoraElige = 'tijera';
+			else
+				computadoraElige = 'papel';
+
+
+		function comparar(eleccionJugador,eleccionCompu){
+			if(eleccionJugador===eleccionCompu){
+				alert('Empatamos!');
+			}
+			else if(eleccionJugador==="piedra"){
+				if(eleccionCompu==='tijera'){
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Ganaste!');
+				}
+				else
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Perdiste!');
+			}
+			
+			else if(eleccionJugador==="tijera"){
+				if(eleccionCompu==="piedra")
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Perdiste!');
+				else
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Ganaste!');
+			}
+			else if(eleccionJugador==='papel'){
+				if(eleccionCompu==='tijera'){
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Perdiste!');
+				}else
+					alert('Tú: '+eleccionJugador+' Compu: '+eleccionCompu+'\n\n Ganaste!');
+			}
+		}
+
+
+		comparar(usuarioElige,computadoraElige);
+
+	</script>
+	
+</body>
+</html>

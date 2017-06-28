@@ -1,0 +1,109 @@
+<!-- cómo acomodar los elementos de una pagina :)-->
+<!--para el autocompletado de codigo se usan el paquete emmet-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!--a este estilo siempre se le hace referencia primero -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- REsponsiva para la resolución de pantallas moviles, tambien puede ser "width=device-width|| en el caso de hacer zoom "minimum-scale=0.5" a "maximum-scale=1", en caso de de negar el zoom "user-scalable=no>". Para que no se vea muy grande o muy chica la pagina se usa "initial-scale=1>". EJEMLPO en la pagina "screwco.hol.es" donde con el celular no se puede hacer zoom-->
+	<title>GRID</title>
+</head>
+
+<body class="container-fluid"> <!--esta clase hace referencia a anchura variable-->
+ 	
+ 	<div clas="row">
+ 		<h2>Ejemplo 1 Desktop o Pantallas medianas</h2>
+ 		<div class="col-md-1">.col-md-1</div>
+ 		<div class="col-md-1">.col-md-1</div>
+ 		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+ 		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+		<div class="col-md-1">.col-md-1</div>
+ 	</div>
+
+
+ 	<div calss="row">
+ 		<div class="col-md-4">.col-md-4</div>
+		<div class="col-md-4">.col-md-4</div>
+		<div class="col-md-4">.col-md-4</div>
+	</div>
+	
+
+
+	<div calss="row">
+ 		<div class="col-md-6">.col-md-6</div>
+		<div class="col-md-6">.col-md-6</div>
+		
+	</div>
+
+
+
+	<h2>Ejemplo 2 Mobile and Desktop</h2>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+		<div class="col-xs-12 col-md-4">.col-xs-12 .col-md-4</div>
+
+	</div>
+
+
+	<h2>Ejemplo 3 Mobile and Desktop</h2>
+		<div class="row">
+			<div class="col-xs-6 col-md-8">.col-xs-6 .col-md-8</div>
+			<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+
+	<h2>Ejemplo 4 Mobile and Desktop</h2>
+		<div class="row">
+			<div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
+			<div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
+		</div>
+
+
+	<h2>Ejemplo 5 Offsetting columns/Espacio entre columnas</h2>
+		<div class="row">
+			<div class="col-md-4">.col-md-4</div>
+			<div class="col-md-4 col-md-offset-4">.col-md-offset-4</div>
+		</div>
+
+	<br>
+	<h2>Ejercicios</h2>
+		<div class="row">
+			<div class="col-xs-6 col-md-3 col-md-offset-3">col-xs-6 col-md-3 col-md-offset-3"</div>
+			<div class="col-xs-6 col-md-3 col-md-offset-3">col-xs-6 col-md-3 col-md-offset-3"</div>
+		</div>
+
+	<h2>Pull y no se qué</h2>	
+		<div class="row">
+			<div class="col-xs-6 col-md-3 col-md-offset-3">col-xs-6 col-md-3 col-md-offset-3"</div>
+			<div class="col-xs-6 col-md-3 col-md-offset-3">col-xs-6 col-md-3 col-md-offset-3</div>
+		</div>
+
+	<h2>Ejemplo 7 Grid dentro de grid</h2>
+		<div class="row">
+			<div class="col-md-12">Nivel 1: col-md-12
+				<div class="row">
+					<div class="col-xs-8 col-md-6">Nivel 2:.col-xs-8, .col-md-6</div>
+					<div calss="col-xs-4 col-md-6">Nivel 2:.col-xs-8, .col-md-6</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	
+
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>

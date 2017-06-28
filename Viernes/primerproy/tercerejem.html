@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tercer Ejemplo, usando input</title>
+</head>
+<body>
+	
+	<input id="miinput" type="text" value=""> <!--sirve para recibir datos-->
+	<button id='boton'>Boton</button>
+	<div id='primerdiv'>--->Aquí está mi div</div>
+
+	
+</body>
+
+	<script>
+		document.getElementById('boton').onclick=function(){
+			var texto = document.getElementById("miinput").value;
+			document.getElementById('primerdiv').innerHTML = texto; //.innerHTML funciona como get y set
+		}
+
+	</script>
+</html>
